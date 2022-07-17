@@ -5,4 +5,5 @@ export interface IExperience {
   tag: ExperienceType;
   fromDate: string;
   toDate: string;
+  description: string;
 }

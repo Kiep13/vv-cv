@@ -14,6 +14,6 @@ export const ExperienceCard = ({experience}: IProps) =>
     </Typography>
 
     <Typography variant='body2' sx={STYLES.experienceCard.description}>
-      Description text which you need to imagine
+      {experience.description}
     </Typography>
   </Card>;

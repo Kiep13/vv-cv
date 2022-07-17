@@ -1,6 +1,6 @@
 import { Chip, Box, Typography } from '@mui/material';
-import { ExperienceCard, ProjectCard } from './components';
 
+import { ExperienceCard, ProjectCard } from './components';
 import { CONTACT_LINKS, EXPERIENCE, PROJECTS, SKILLS, STYLES } from './constants';
 import { IContactLink, IExperience, IProject } from './interfaces';
 
@@ -32,7 +32,7 @@ export const Cv = () => {
 
           <Box sx={STYLES.experienceCards}>
             {EXPERIENCE.map((experience: IExperience) =>
-              <ExperienceCard experience={experience}/>
+              <ExperienceCard experience={experience} key={experience.title}/>
             )}
           </Box>
         </Box>
@@ -55,10 +55,8 @@ export const Cv = () => {
             Contact me
           </Typography>
           <Box sx={STYLES.links}>
-            {CONTACT_LINKS.map((contactLink: IContactLink) =>
-              <Box sx={STYLES.contactImage} key={contactLink.image}>
-                <img src={contactLink.image}/>
-              </Box>
+            {CONTACT_LINKS.map(({icon: Icon}: IContactLink, index: number) =>
+              <Icon sx={STYLES.contactImage} key={index}/>
             )}
           </Box>
         </Box>

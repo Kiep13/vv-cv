@@ -1,17 +1,17 @@
-import EmailPic from '../../../../assets/email.png';
-import LinkedInPic from '../../../../assets/linkedin.png';
-import TelegramPic from '../../../../assets/telegram.png';
+import MailOutlineIcon from '@mui/icons-material/MailOutline';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import TelegramIcon from '@mui/icons-material/Telegram';
 
 import { IContactLink } from '../interfaces';
 
 export const CONTACT_LINKS: IContactLink[] = [
   {
-    image: EmailPic
+    icon: MailOutlineIcon
   },
   {
-    image: LinkedInPic
+    icon: LinkedInIcon
   },
   {
-    image: TelegramPic
+    icon: TelegramIcon
   }
 ]
