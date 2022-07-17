@@ -1,0 +1,13 @@
+{
+  "buildpacks": [
+    {
+      "url": "https://buildpack-registry.s3.amazonaws.com/buildpacks/heroku-community/multi-procfile.tgz"
+    },
+    {
+      "url": "https://buildpack-registry.s3.amazonaws.com/buildpacks/heroku-community/static.tgz"
+    },
+    {
+      "url": "heroku/nodejs"
+    }
+  ]
+}
