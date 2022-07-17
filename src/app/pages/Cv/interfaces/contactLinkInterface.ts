@@ -1,3 +1,3 @@
 export interface IContactLink {
-  image: string;
+  icon: any;
 }

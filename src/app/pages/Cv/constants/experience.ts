@@ -9,11 +9,13 @@ export const EXPERIENCE: IExperience[] = [
     tag: ExperienceType.Education,
     fromDate: moment('2017-09-01').format('MMM YYYY'),
     toDate: moment('2021-06-30').format('MMM YYYY'),
+    description: 'Got major degree'
   },
   {
     title: 'iTechArt',
     tag: ExperienceType.Work,
     fromDate: moment('2021-07-07').format('MMM YYYY'),
-    toDate: 'Present'
+    toDate: 'Present',
+    description: 'Work as C++ developer'
   },
 ]

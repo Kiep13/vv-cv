@@ -40,6 +40,7 @@ export const STYLES = {
     fontSize: '100px',
     fontWeight: 'bold',
 
+    textAlign: 'center',
     marginBottom: '15px'
   },
   description: {
@@ -88,7 +89,9 @@ export const STYLES = {
   skills: {
     display: 'flex',
     flexDirection: 'row',
-    gap: '15px'
+    justifyContent: 'center',
+    gap: '15px',
+    flexWrap: 'wrap'
   },
   skill: {
     fontFamily: 'JetBrains Mono',
@@ -109,7 +112,8 @@ export const STYLES = {
   },
   contactImage: {
     width: '50px',
-    height: '50px'
+    height: '50px',
+    color: 'white'
   },
   experienceCards: {
     width: '100%',
@@ -120,6 +124,7 @@ export const STYLES = {
     justifyContent: 'center',
 
     gap: '20px',
+    flexWrap: 'wrap'
   },
   experienceCard: {
     wrapper: {
