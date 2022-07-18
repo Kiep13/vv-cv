@@ -55,8 +55,10 @@ export const Cv = () => {
             Contact me
           </Typography>
           <Box sx={STYLES.links}>
-            {CONTACT_LINKS.map(({icon: Icon}: IContactLink, index: number) =>
-              <Icon sx={STYLES.contactImage} key={index}/>
+            {CONTACT_LINKS.map(({icon: Icon, link}: IContactLink) =>
+              <a target='_blank' href={link} key={link}>
+                <Icon sx={STYLES.contactImage}/>
+              </a>
             )}
           </Box>
         </Box>

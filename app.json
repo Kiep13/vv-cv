@@ -1,4 +1,10 @@
 {
+  "env": {
+    "PROCFILE": {
+      "description": "Name and path for procfile file",
+      "value": "Procfile"
+    }
+  },
   "buildpacks": [
     {
       "url": "https://buildpack-registry.s3.amazonaws.com/buildpacks/heroku-community/multi-procfile.tgz"

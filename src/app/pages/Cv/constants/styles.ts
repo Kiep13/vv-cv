@@ -113,7 +113,8 @@ export const STYLES = {
   contactImage: {
     width: '50px',
     height: '50px',
-    color: 'white'
+    color: 'white',
+    cursor: 'pointer'
   },
   experienceCards: {
     width: '100%',
