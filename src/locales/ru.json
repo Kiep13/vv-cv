@@ -1,0 +1,23 @@
+{
+  "greeting": "Привет!",
+  "nameIntroduce": "Я Валера",
+  "aboutDescription": "Если я что-то не знаю - дайте мне немного времени. Я стану мастером.",
+  "sectionTitles": {
+    "experience": "Опыт",
+    "projects": "Проекты",
+    "contactMe": "Связь со мной"
+  },
+  "experience": {
+    "psu": {
+      "title": "Полоцкий Государственный Университет",
+      "description": "Получение степени бакалавра"
+    },
+    "iTechArt": {
+      "title": "iTechArt",
+      "description": "Работа в качестве C++ разработчика"
+    }
+  },
+  "projectDescriptions": {
+    "gnz": "Go No Zombies - приложение для поиска и устранения зомби-процессов из Вашей системы."
+  }
+}

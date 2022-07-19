@@ -1,0 +1,23 @@
+{
+  "greeting": "Hi!",
+  "nameIntroduce": "I'm Valera",
+  "aboutDescription": "If I don't know something - just give me some time. I become master.",
+  "sectionTitles": {
+    "experience": "Experience",
+    "projects": "Projects",
+    "contactMe": "Contact me"
+  },
+  "experience": {
+    "psu": {
+      "title": "Polotsk State University",
+      "description": "Got major degree"
+    },
+    "iTechArt": {
+      "title": "iTechArt",
+      "description": "Work as C++ developer"
+    }
+  },
+  "projectDescriptions": {
+    "gnz": "Go No Zombies - application for search and eliminate zombies from your system."
+  }
+}

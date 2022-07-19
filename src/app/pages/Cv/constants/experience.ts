@@ -5,17 +5,17 @@ import { IExperience } from '../interfaces';
 
 export const EXPERIENCE: IExperience[] = [
   {
-    title: 'Polotsk State University',
+    titleTranslationKey: 'experience.psu.title',
     tag: ExperienceType.Education,
     fromDate: moment('2017-09-01').format('MMM YYYY'),
     toDate: moment('2021-06-30').format('MMM YYYY'),
-    description: 'Got major degree'
+    descriptionTranslationKey: 'experience.psu.description',
   },
   {
-    title: 'iTechArt',
+    titleTranslationKey: 'experience.iTechArt.title',
     tag: ExperienceType.Work,
     fromDate: moment('2021-07-07').format('MMM YYYY'),
     toDate: 'Present',
-    description: 'Work as C++ developer'
+    descriptionTranslationKey: 'experience.iTechArt.description',
   },
 ]

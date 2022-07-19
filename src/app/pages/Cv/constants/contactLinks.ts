@@ -7,7 +7,7 @@ import { IContactLink } from '../interfaces';
 export const CONTACT_LINKS: IContactLink[] = [
   {
     icon: MailOutlineIcon,
-    link: ''
+    link: 'mailto:valery.volkau.software.developer@gmail.com'
   },
   {
     icon: LinkedInIcon,
