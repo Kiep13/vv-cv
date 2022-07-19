@@ -1,29 +1,18 @@
 import { Box, Menu, MenuItem } from '@mui/material';
 import LanguageIcon from '@mui/icons-material/Language';
-import { useTranslation } from 'react-i18next';
-import { useState } from 'react';
 
 import { LANGUAGES, STYLES } from '../../constants';
 import { ILanguage } from '../../interfaces';
+import { useHeader } from './useHeader';
 
 export const Header = () => {
-  const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
-  const open = Boolean(anchorEl);
-
-  const {i18n} = useTranslation();
-
-  const handleClick = (event: any): void => {
-    setAnchorEl(event.currentTarget);
-  };
-
-  const handleClose = (): void => {
-    setAnchorEl(null);
-  };
-
-  const handleSetLanguage = (language: string): void => {
-    i18n.changeLanguage(language);
-    setAnchorEl(null);
-  };
+  const {
+    anchorEl,
+    open,
+    handleClick,
+    handleClose,
+    handleSetLanguage
+  } = useHeader();
 
   return (
     <Box sx={STYLES.header.wrapper}>
@@ -44,7 +33,7 @@ export const Header = () => {
         sx={STYLES.header.menu}
       >
         {LANGUAGES.map((language: ILanguage) =>
-          <MenuItem onClick={() => handleSetLanguage(language.code)}>{language.title}</MenuItem>
+          <MenuItem onClick={() => handleSetLanguage(language.code)} key={language.code}>{language.title}</MenuItem>
         )}
       </Menu>
     </Box>

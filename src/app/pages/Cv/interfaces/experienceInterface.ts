@@ -4,6 +4,6 @@ export interface IExperience {
   titleTranslationKey: string;
   tag: ExperienceType;
   fromDate: string;
-  toDate: string;
+  toDate: string | null;
   descriptionTranslationKey: string;
 }
