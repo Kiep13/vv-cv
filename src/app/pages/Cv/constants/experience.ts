@@ -7,6 +7,8 @@ import { IExperience } from '../interfaces';
 export const EXPERIENCE: IExperience[] = [
   {
     titleTranslationKey: 'experience.psu.title',
+    isTitleTooltip: true,
+    titleTooltipTranslationKey: 'experience.psu.titleTooltip',
     tag: ExperienceType.Education,
     fromDate: moment('2017-09-01').format(DATE_FORMAT),
     toDate: moment('2021-06-30').format(DATE_FORMAT),

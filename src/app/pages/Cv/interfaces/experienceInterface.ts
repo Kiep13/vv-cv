@@ -6,4 +6,6 @@ export interface IExperience {
   fromDate: string;
   toDate: string | null;
   descriptionTranslationKey: string;
+  isTitleTooltip?: boolean;
+  titleTooltipTranslationKey?: string;
 }

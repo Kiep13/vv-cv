@@ -9,7 +9,8 @@
   },
   "experience": {
     "psu": {
-      "title": "Polotsk State University",
+      "title": "PSU",
+      "titleTooltip": "Polotsk State University",
       "description": "Got major degree"
     },
     "iTechArt": {
