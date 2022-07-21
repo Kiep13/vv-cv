@@ -173,6 +173,7 @@ export const STYLES = {
     },
     title: {
       display: 'flex',
+      width: 'fit-content',
       fontSize: {
         md: '42px',
         xs: '34px'
@@ -232,6 +233,6 @@ export const STYLES = {
   tooltip: {
     borderRadius: '10px',
     fontSize: 14,
-    maxWidth: 220,
+    maxWidth: 220
   }
 };
