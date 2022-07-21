@@ -12,7 +12,7 @@ export const CustomTooltip = styled(({className, ...props}: TooltipProps) => (
         {
           name: 'offset',
           options: {
-            offset: [50, -20],
+            offset: [70, -10],
           },
         },
       ],
