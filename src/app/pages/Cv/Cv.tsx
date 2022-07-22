@@ -1,23 +1,27 @@
 import { Chip, Box, Typography } from '@mui/material';
+import { useTranslation } from 'react-i18next';
 
-import { ExperienceCard, ProjectCard } from './components';
+import { ExperienceCard, Header, ProjectCard } from './components';
 import { CONTACT_LINKS, EXPERIENCE, PROJECTS, SKILLS, STYLES } from './constants';
 import { IContactLink, IExperience, IProject } from './interfaces';
 
 export const Cv = () => {
+  const {t} = useTranslation();
+
   return (
     <Box sx={STYLES.page}>
+      <Header/>
       <Box sx={STYLES.content}>
         <Box sx={STYLES.section}>
           <Typography variant='h1' component='div' gutterBottom sx={STYLES.title}>
-            Hi!
+            {t('greeting')}
           </Typography>
           <Typography variant='h1' component='div' gutterBottom sx={STYLES.title}>
-            I'm Valera
+            {t('nameIntroduce')}
           </Typography>
 
           <Typography component='legend' sx={STYLES.description}>
-            If I don't know something - just give me some time. I become master.
+            {t('aboutDescription')}
           </Typography>
 
           <Box sx={STYLES.skills}>
@@ -27,12 +31,12 @@ export const Cv = () => {
 
         <Box sx={STYLES.section}>
           <Typography component='legend' sx={STYLES.subtitle}>
-            Experience
+            {t('sectionTitles.experience')}
           </Typography>
 
           <Box sx={STYLES.experienceCards}>
             {EXPERIENCE.map((experience: IExperience) =>
-              <ExperienceCard experience={experience} key={experience.title}/>
+              <ExperienceCard experience={experience} key={experience.titleTranslationKey}/>
             )}
           </Box>
         </Box>
@@ -40,7 +44,7 @@ export const Cv = () => {
 
         <Box sx={STYLES.section}>
           <Typography component='legend' sx={STYLES.subtitle}>
-            Projects
+            {t('sectionTitles.projects')}
           </Typography>
 
           <Box sx={STYLES.projectCards}>
@@ -52,11 +56,13 @@ export const Cv = () => {
 
         <Box sx={STYLES.section}>
           <Typography component='legend' sx={STYLES.subtitle}>
-            Contact me
+            {t('sectionTitles.contactMe')}
           </Typography>
           <Box sx={STYLES.links}>
-            {CONTACT_LINKS.map(({icon: Icon}: IContactLink, index: number) =>
-              <Icon sx={STYLES.contactImage} key={index}/>
+            {CONTACT_LINKS.map(({icon: Icon, link}: IContactLink) =>
+              <a target='_blank' rel='noreferrer' href={link} key={link}>
+                <Icon sx={STYLES.contactImage}/>
+              </a>
             )}
           </Box>
         </Box>

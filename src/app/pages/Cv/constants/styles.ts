@@ -7,6 +7,8 @@ export const STYLES = {
     minHeight: '100vh',
 
     display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
     justifyContent: 'center',
 
     background: COLORS[ColorNames.Background],
@@ -15,6 +17,34 @@ export const STYLES = {
 
     overflowY: 'auto',
     overflowX: 'hidden'
+  },
+  header: {
+    wrapper: {
+      height: '50px',
+      width: 'calc(100vw - 60px)',
+
+      padding: '10px 30px',
+
+      display: 'flex',
+      flexDirection: 'row',
+      justifyContent: 'flex-start',
+      alignItems: 'center'
+    },
+    icon: {
+      color: COLORS[ColorNames.Name]
+    },
+    menu: {
+      '& .MuiPaper-root': {
+        marginTop: '10px',
+        backgroundColor: COLORS[ColorNames.FocusBackground],
+        color: COLORS[ColorNames.Name]
+      }
+    },
+    menuItem: {
+      display: 'flex',
+      alignItems: 'center',
+      gap: '5px'
+    }
   },
   content: {
     margin: '40px',
@@ -113,7 +143,8 @@ export const STYLES = {
   contactImage: {
     width: '50px',
     height: '50px',
-    color: 'white'
+    color: 'white',
+    cursor: 'pointer'
   },
   experienceCards: {
     width: '100%',
@@ -128,8 +159,9 @@ export const STYLES = {
   },
   experienceCard: {
     wrapper: {
-      width: '300px',
-      height: '200px',
+      width: '100%',
+      maxWidth: '340px',
+      height: '240px',
 
       background: 'inherit',
       padding: '10px',
@@ -146,7 +178,11 @@ export const STYLES = {
     },
     title: {
       display: 'flex',
-      fontSize: '42px',
+      width: 'fit-content',
+      fontSize: {
+        md: '42px',
+        xs: '34px'
+      },
 
       color: COLORS[ColorNames.Name]
     },
@@ -170,8 +206,9 @@ export const STYLES = {
   },
   projectCard: {
     wrapper: {
-      width: '300px',
-      height: '200px',
+      width: '100%',
+      maxWidth: '340px',
+      height: '240px',
 
       padding: '10px',
 
@@ -179,7 +216,7 @@ export const STYLES = {
       boxShadow: `10px 10px ${COLORS[ColorNames.Border]}`,
 
       '&:hover': {
-        background: COLORS[ColorNames.FocusBackground],
+        background: COLORS[ColorNames.FocusBackground]
       }
     },
     title: {
@@ -197,5 +234,10 @@ export const STYLES = {
 
       color: COLORS[ColorNames.Text]
     }
+  },
+  tooltip: {
+    borderRadius: '10px',
+    fontSize: 14,
+    maxWidth: 220
   }
 };

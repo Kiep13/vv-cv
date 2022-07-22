@@ -1,21 +1,24 @@
 import moment from 'moment';
 
+import { DATE_FORMAT } from '../../../utils/contants';
 import { ExperienceType } from '../enums';
 import { IExperience } from '../interfaces';
 
 export const EXPERIENCE: IExperience[] = [
   {
-    title: 'Polotsk State University',
+    titleTranslationKey: 'experience.psu.title',
+    isTitleTooltip: true,
+    titleTooltipTranslationKey: 'experience.psu.titleTooltip',
     tag: ExperienceType.Education,
-    fromDate: moment('2017-09-01').format('MMM YYYY'),
-    toDate: moment('2021-06-30').format('MMM YYYY'),
-    description: 'Got major degree'
+    fromDate: moment('2017-09-01').format(DATE_FORMAT),
+    toDate: moment('2021-06-30').format(DATE_FORMAT),
+    descriptionTranslationKey: 'experience.psu.description',
   },
   {
-    title: 'iTechArt',
+    titleTranslationKey: 'experience.iTechArt.title',
     tag: ExperienceType.Work,
-    fromDate: moment('2021-07-07').format('MMM YYYY'),
-    toDate: 'Present',
-    description: 'Work as C++ developer'
+    fromDate: moment('2021-07-07').format(DATE_FORMAT),
+    toDate: null,
+    descriptionTranslationKey: 'experience.iTechArt.description',
   },
 ]
