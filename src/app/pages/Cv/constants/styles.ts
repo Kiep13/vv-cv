@@ -39,6 +39,11 @@ export const STYLES = {
         backgroundColor: COLORS[ColorNames.FocusBackground],
         color: COLORS[ColorNames.Name]
       }
+    },
+    menuItem: {
+      display: 'flex',
+      alignItems: 'center',
+      gap: '5px'
     }
   },
   content: {

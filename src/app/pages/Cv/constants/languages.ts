@@ -2,11 +2,13 @@ import { ILanguage } from '../interfaces';
 
 export const LANGUAGES: ILanguage[] = [
   {
-    title: 'en',
-    code: 'en'
+    title: 'English',
+    code: 'en',
+    countryCode: 'gb'
   },
   {
-    title: 'ru',
-    code: 'ru'
+    title: 'Русский',
+    code: 'ru',
+    countryCode: 'ru'
   }
 ]

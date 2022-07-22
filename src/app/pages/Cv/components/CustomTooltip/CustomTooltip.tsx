@@ -6,13 +6,13 @@ export const CustomTooltip = styled(({className, ...props}: TooltipProps) => (
   <Tooltip
     {...props}
     classes={{popper: className}}
-    placement='top'
+    placement='bottom'
     PopperProps={{
       modifiers: [
         {
           name: 'offset',
           options: {
-            offset: [70, -10],
+            offset: [70, -15],
           },
         },
       ],

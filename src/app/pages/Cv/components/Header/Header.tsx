@@ -1,5 +1,6 @@
 import { Box, Menu, MenuItem } from '@mui/material';
 import LanguageIcon from '@mui/icons-material/Language';
+import ReactCountryFlag from 'react-country-flag';
 
 import { LANGUAGES, STYLES } from '../../constants';
 import { ILanguage } from '../../interfaces';
@@ -33,7 +34,10 @@ export const Header = () => {
         sx={STYLES.header.menu}
       >
         {LANGUAGES.map((language: ILanguage) =>
-          <MenuItem onClick={() => handleSetLanguage(language.code)} key={language.code}>{language.title}</MenuItem>
+          <MenuItem onClick={() => handleSetLanguage(language.code)} sx={STYLES.header.menuItem} key={language.code}>
+            <ReactCountryFlag countryCode={language.countryCode} svg />
+            {language.title}
+          </MenuItem>
         )}
       </Menu>
     </Box>
