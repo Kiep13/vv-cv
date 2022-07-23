@@ -10,17 +10,20 @@ export const ExperienceCard = ({experience}: IProps) => {
   const {t} = useTranslation();
   const {formatDate} = useDate();
 
-  const title = <Typography variant='h5' component='div' sx={STYLES.experienceCard.title}>
+  const title = <Typography
+    variant='h5'
+    component='div'
+    sx={STYLES.experienceCard.title}>
     {t(experience.titleTranslationKey)}
   </Typography>
 
   return (
     <Card sx={STYLES.experienceCard.wrapper}>
       {experience.isTitleTooltip ?
-        <CustomTooltip title={t(experience?.titleTooltipTranslationKey || '')}>
+        <CustomTooltip title={t(experience.titleTooltipTranslationKey || '')}>
           {title}
-        </CustomTooltip> :
-        title
+        </CustomTooltip>
+        : title
       }
 
       <Typography color='text.secondary' sx={STYLES.experienceCard.period} gutterBottom>
@@ -31,5 +34,5 @@ export const ExperienceCard = ({experience}: IProps) => {
         {t(experience.descriptionTranslationKey)}
       </Typography>
     </Card>
-  )
+  );
 };
