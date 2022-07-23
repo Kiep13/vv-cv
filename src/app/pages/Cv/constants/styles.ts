@@ -238,6 +238,9 @@ export const STYLES = {
   tooltip: {
     borderRadius: '10px',
     fontSize: 14,
-    maxWidth: 220
+    maxWidth: 220,
+
+    color: COLORS[ColorNames.Name],
+    background: COLORS[ColorNames.Background]
   }
 };
