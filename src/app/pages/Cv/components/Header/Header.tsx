@@ -1,12 +1,13 @@
 import { Box, Menu, MenuItem } from '@mui/material';
 import LanguageIcon from '@mui/icons-material/Language';
 import ReactCountryFlag from 'react-country-flag';
+import { memo } from 'react';
 
 import { LANGUAGES, STYLES } from '../../constants';
 import { ILanguage } from '../../interfaces';
 import { useHeader } from './useHeader';
 
-export const Header = () => {
+export const Header = memo(() => {
   const {
     anchorEl,
     open,
@@ -42,4 +43,4 @@ export const Header = () => {
       </Menu>
     </Box>
   );
-};
+});

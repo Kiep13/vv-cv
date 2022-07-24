@@ -1,4 +1,5 @@
 import { Card, Typography } from '@mui/material';
+import { memo } from 'react';
 import { useTranslation } from 'react-i18next';
 
 import { useDate } from '../../../../utils/hooks';
@@ -6,7 +7,7 @@ import { STYLES } from '../../constants';
 import { CustomTooltip } from '../CustomTooltip';
 import { IProps } from './propsInterface';
 
-export const ExperienceCard = ({experience}: IProps) => {
+export const ExperienceCard = memo(({experience}: IProps) => {
   const {t} = useTranslation();
   const {formatDate} = useDate();
 
@@ -35,4 +36,4 @@ export const ExperienceCard = ({experience}: IProps) => {
       </Typography>
     </Card>
   );
-};
+});

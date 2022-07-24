@@ -1,10 +1,11 @@
 import { Box, Typography } from '@mui/material';
 import { useTranslation } from 'react-i18next';
+import { memo } from 'react';
 
 import { STYLES } from '../../constants';
 import { IProps } from './propsInterface';
 
-export const ProjectCard = ({project}: IProps) => {
+export const ProjectCard = memo(({project}: IProps) => {
   const {t} = useTranslation();
 
   return (
@@ -17,4 +18,4 @@ export const ProjectCard = ({project}: IProps) => {
       </Typography>
     </Box>
   )
-}
+});
