@@ -40,19 +40,18 @@ export const Cv = () => {
             )}
           </Box>
         </Box>
+        
+        {/*<Box sx={STYLES.section}>*/}
+        {/*  <Typography component='legend' sx={STYLES.subtitle}>*/}
+        {/*    {t('sectionTitles.projects')}*/}
+        {/*  </Typography>*/}
 
-
-        <Box sx={STYLES.section}>
-          <Typography component='legend' sx={STYLES.subtitle}>
-            {t('sectionTitles.projects')}
-          </Typography>
-
-          <Box sx={STYLES.projectCards}>
-            {PROJECTS.map((project: IProject) =>
-              <ProjectCard project={project} key={project.title}/>
-            )}
-          </Box>
-        </Box>
+        {/*  <Box sx={STYLES.projectCards}>*/}
+        {/*    {PROJECTS.map((project: IProject) =>*/}
+        {/*      <ProjectCard project={project} key={project.title}/>*/}
+        {/*    )}*/}
+        {/*  </Box>*/}
+        {/*</Box>*/}
 
         <Box sx={STYLES.section}>
           <Typography component='legend' sx={STYLES.subtitle}>
