@@ -1,9 +1,9 @@
 import { Chip, Box, Typography } from '@mui/material';
 import { useTranslation } from 'react-i18next';
 
-import { ExperienceCard, Header, ProjectCard } from './components';
-import { CONTACT_LINKS, EXPERIENCE, PROJECTS, SKILLS, STYLES } from './constants';
-import { IContactLink, IExperience, IProject } from './interfaces';
+import { ExperienceCard, Header } from './components';
+import { CONTACT_LINKS, EXPERIENCE, SKILLS, STYLES } from './constants';
+import { IContactLink, IExperience } from './interfaces';
 
 export const Cv = () => {
   const {t} = useTranslation();
@@ -37,19 +37,6 @@ export const Cv = () => {
           <Box sx={STYLES.experienceCards}>
             {EXPERIENCE.map((experience: IExperience) =>
               <ExperienceCard experience={experience} key={experience.titleTranslationKey}/>
-            )}
-          </Box>
-        </Box>
-
-
-        <Box sx={STYLES.section}>
-          <Typography component='legend' sx={STYLES.subtitle}>
-            {t('sectionTitles.projects')}
-          </Typography>
-
-          <Box sx={STYLES.projectCards}>
-            {PROJECTS.map((project: IProject) =>
-              <ProjectCard project={project} key={project.title}/>
             )}
           </Box>
         </Box>

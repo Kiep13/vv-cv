@@ -23,7 +23,7 @@ export const STYLES = {
       height: '50px',
       width: 'calc(100vw - 60px)',
 
-      padding: '10px 30px',
+      padding: '10px 30px 0px',
 
       display: 'flex',
       flexDirection: 'row',
@@ -47,7 +47,7 @@ export const STYLES = {
     }
   },
   content: {
-    margin: '40px',
+    margin: ' 0 40px 40px',
     width: '100%',
     maxWidth: '900px',
 
@@ -55,7 +55,7 @@ export const STYLES = {
     flexDirection: 'column',
     justifyContent: 'center',
     alignItems: 'center',
-    gap: '200px'
+    gap: '120px'
   },
   section: {
     width: '100%',
@@ -192,43 +192,6 @@ export const STYLES = {
     },
     description: {
       fontSize: 18,
-      fontWeight: 200,
-      fontFamily: 'monospace',
-
-      color: COLORS[ColorNames.Text]
-    }
-  },
-  projectCards: {
-    width: '100%',
-    display: 'grid',
-    alignItems: 'center',
-    justifyContent: 'center'
-  },
-  projectCard: {
-    wrapper: {
-      width: '100%',
-      maxWidth: '340px',
-      height: '240px',
-
-      padding: '10px',
-
-      border: `1px solid ${COLORS[ColorNames.Border]}`,
-      boxShadow: `10px 10px ${COLORS[ColorNames.Border]}`,
-
-      '&:hover': {
-        background: COLORS[ColorNames.FocusBackground]
-      }
-    },
-    title: {
-      display: 'flex',
-      justifyContent: 'center',
-      fontSize: '42px',
-      fontStyle: 'italic',
-
-      color: COLORS[ColorNames.Name]
-    },
-    description: {
-      fontSize: '18px',
       fontWeight: 200,
       fontFamily: 'monospace',
 

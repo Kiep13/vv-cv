@@ -1,6 +1,6 @@
 export const SKILLS: string[] = [
+  'C',
   'C++',
   'Qt',
-  'C',
   'Rust'
 ]

@@ -1,10 +1,9 @@
 {
   "greeting": "Hi!",
   "nameIntroduce": "I'm Valera",
-  "aboutDescription": "If I don't know something - just give me some time. I become master.",
+  "aboutDescription": "If I don't know something - just give me some time. I'll master it.",
   "sectionTitles": {
     "experience": "Experience",
-    "projects": "Projects",
     "contactMe": "Contact me"
   },
   "experience": {
@@ -17,9 +16,6 @@
       "title": "iTechArt",
       "description": "Work as C++ developer"
     }
-  },
-  "projectDescriptions": {
-    "gnz": "Go No Zombies - application for search and eliminate zombies from your system."
   },
   "shared": {
     "present": "Present"
