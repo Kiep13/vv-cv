@@ -23,7 +23,7 @@ export const STYLES = {
       height: '50px',
       width: 'calc(100vw - 60px)',
 
-      padding: '10px 30px',
+      padding: '10px 30px 0px',
 
       display: 'flex',
       flexDirection: 'row',
@@ -47,7 +47,7 @@ export const STYLES = {
     }
   },
   content: {
-    margin: '40px',
+    margin: ' 0 40px 40px',
     width: '100%',
     maxWidth: '900px',
 
@@ -55,7 +55,7 @@ export const STYLES = {
     flexDirection: 'column',
     justifyContent: 'center',
     alignItems: 'center',
-    gap: '200px'
+    gap: '120px'
   },
   section: {
     width: '100%',
