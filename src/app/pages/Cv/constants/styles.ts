@@ -198,43 +198,6 @@ export const STYLES = {
       color: COLORS[ColorNames.Text]
     }
   },
-  projectCards: {
-    width: '100%',
-    display: 'grid',
-    alignItems: 'center',
-    justifyContent: 'center'
-  },
-  projectCard: {
-    wrapper: {
-      width: '100%',
-      maxWidth: '340px',
-      height: '240px',
-
-      padding: '10px',
-
-      border: `1px solid ${COLORS[ColorNames.Border]}`,
-      boxShadow: `10px 10px ${COLORS[ColorNames.Border]}`,
-
-      '&:hover': {
-        background: COLORS[ColorNames.FocusBackground]
-      }
-    },
-    title: {
-      display: 'flex',
-      justifyContent: 'center',
-      fontSize: '42px',
-      fontStyle: 'italic',
-
-      color: COLORS[ColorNames.Name]
-    },
-    description: {
-      fontSize: '18px',
-      fontWeight: 200,
-      fontFamily: 'monospace',
-
-      color: COLORS[ColorNames.Text]
-    }
-  },
   tooltip: {
     borderRadius: '10px',
     border: `1px solid ${COLORS[ColorNames.Name]}`,
