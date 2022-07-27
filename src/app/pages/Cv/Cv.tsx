@@ -16,9 +16,6 @@ export const Cv = () => {
           <Typography variant='h1' component='div' gutterBottom sx={STYLES.title}>
             {t('greeting')}
           </Typography>
-          <Typography variant='h1' component='div' gutterBottom sx={STYLES.title}>
-            {t('nameIntroduce')}
-          </Typography>
 
           <Typography component='legend' sx={STYLES.description}>
             {t('aboutDescription')}

@@ -1,7 +1,6 @@
 {
-  "greeting": "Привет!",
-  "nameIntroduce": "Я Валера",
-  "aboutDescription": "Если я что-то не знаю - дайте мне немного времени. Я освою это.",
+  "greeting": "Привет!\nЯ Валера",
+  "aboutDescription": "Если я что-то не знаю - дайте мне немного времени.\n Я освою это.",
   "sectionTitles": {
     "experience": "Опыт",
     "contactMe": "Контакты"

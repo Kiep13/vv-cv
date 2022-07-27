@@ -1,7 +1,6 @@
 {
-  "greeting": "Hi!",
-  "nameIntroduce": "I'm Valera",
-  "aboutDescription": "If I don't know something - just give me some time. I'll master it.",
+  "greeting": "Hi!\nI'm Valera",
+  "aboutDescription": "If I don't know something - just give me some time.\n I'll master it.",
   "sectionTitles": {
     "experience": "Experience",
     "contactMe": "Contact me"
