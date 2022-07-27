@@ -69,6 +69,7 @@ export const STYLES = {
     fontFamily: 'JetBrains Mono',
     fontSize: '100px',
     fontWeight: 'bold',
+    whiteSpace: 'pre-wrap',
 
     textAlign: 'center',
     marginBottom: '15px'
@@ -79,6 +80,7 @@ export const STYLES = {
     fontWeight: '200',
 
     color: COLORS[ColorNames.Text],
+    whiteSpace: 'pre-wrap',
 
     textAlign: 'center',
     marginBottom: '20px'
@@ -170,11 +172,7 @@ export const STYLES = {
 
       color: 'white',
       border: `1px solid ${COLORS[ColorNames.Border]}`,
-      boxShadow: `10px 10px ${COLORS[ColorNames.Border]}`,
-
-      '&:hover': {
-        background: COLORS[ColorNames.FocusBackground]
-      }
+      boxShadow: `10px 10px ${COLORS[ColorNames.Border]}`
     },
     title: {
       display: 'flex',
