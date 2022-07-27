@@ -170,11 +170,7 @@ export const STYLES = {
 
       color: 'white',
       border: `1px solid ${COLORS[ColorNames.Border]}`,
-      boxShadow: `10px 10px ${COLORS[ColorNames.Border]}`,
-
-      '&:hover': {
-        background: COLORS[ColorNames.FocusBackground]
-      }
+      boxShadow: `10px 10px ${COLORS[ColorNames.Border]}`
     },
     title: {
       display: 'flex',
