@@ -1,6 +1,5 @@
 import moment from 'moment';
 
-import { DATE_FORMAT } from '../../../utils/contants';
 import { ExperienceType } from '../enums';
 import { IExperience } from '../interfaces';
 
