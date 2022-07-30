@@ -2,8 +2,8 @@ import { Chip, Box, Typography } from '@mui/material';
 import { useTranslation } from 'react-i18next';
 
 import { ExperienceCard, Header } from './components';
-import { CONTACT_LINKS, EXPERIENCE, SKILLS, STYLES } from './constants';
-import { IContactLink, IExperience } from './interfaces';
+import { CONTACT_LINKS, EXPERIENCE, SKILLS, STYLES, TECHNICAL_SKILLS } from './constants';
+import { IContactLink, IExperience, ITechnicalSkill } from './interfaces';
 
 export const Cv = () => {
   const {t} = useTranslation();
@@ -23,6 +23,21 @@ export const Cv = () => {
 
           <Box sx={STYLES.skills}>
             {SKILLS.map((skill: string) => <Chip label={skill} variant='outlined' sx={STYLES.skill} key={skill}/>)}
+          </Box>
+        </Box>
+
+        <Box sx={STYLES.section}>
+          <Typography component='legend' sx={STYLES.subtitle}>
+            {t('sectionTitles.skills')}
+          </Typography>
+
+          <Box sx={STYLES.technicalSkills}>
+            {TECHNICAL_SKILLS.map((technicalSkill: ITechnicalSkill) =>
+              <Box key={technicalSkill.positionNameKey} sx={STYLES.technicalSkill}>
+                <Typography sx={STYLES.technicalSkillPosition}>{technicalSkill.positionNameKey}</Typography>
+                <Typography sx={STYLES.technicalSkillValue}>{technicalSkill.skills.join(', ')}</Typography>
+              </Box>
+            )}
           </Box>
         </Box>
 

@@ -2,6 +2,7 @@
   "greeting": "Привет!\nЯ Валера",
   "aboutDescription": "Если я что-то не знаю - дайте мне немного времени.\n Я освою это.",
   "sectionTitles": {
+    "skills": "Навыки",
     "experience": "Опыт",
     "contactMe": "Контакты"
   },
