@@ -148,6 +148,46 @@ export const STYLES = {
     color: 'white',
     cursor: 'pointer'
   },
+  technicalSkills: {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    justifyContent: 'center',
+
+    padding: '0 10px',
+    width: 'calc(100% - 20px)'
+  },
+  technicalSkill: {
+    display: 'flex',
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+    gap: '15px',
+
+    width: '100%',
+  },
+  technicalSkillPosition: {
+    flex: 1,
+    display: 'flex',
+    justifyContent: 'flex-end',
+
+    fontSize: '28px',
+    fontWeight: 200,
+    fontFamily: 'monospace',
+    textAlign: 'end',
+    color: COLORS[ColorNames.Text],
+  },
+  technicalSkillValue: {
+    flex: 1,
+    display: 'flex',
+    justifyContent: 'flex-start',
+
+    fontSize: '28px',
+    fontWeight: 200,
+    fontFamily: 'monospace',
+    textAlign: 'start',
+    color: COLORS[ColorNames.Function],
+  },
   experienceCards: {
     width: '100%',
 

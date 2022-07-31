@@ -2,8 +2,15 @@
   "greeting": "Hi!\nI'm Valera",
   "aboutDescription": "If I don't know something - just give me some time.\n I'll master it.",
   "sectionTitles": {
+    "skills": "Skills",
     "experience": "Experience",
     "contactMe": "Contact me"
+  },
+  "technicalSkillPositions": {
+    "osPlatforms": "OS Platforms:",
+    "apiTools": "API Tools:",
+    "projectManagementTools": "Project Management Tools:",
+    "virtualizationTools": "Virtualization Tools:"
   },
   "experience": {
     "psu": {
