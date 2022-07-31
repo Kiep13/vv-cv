@@ -34,7 +34,9 @@ export const Cv = () => {
           <Box sx={STYLES.technicalSkills}>
             {TECHNICAL_SKILLS.map((technicalSkill: ITechnicalSkill) =>
               <Box key={technicalSkill.positionNameKey} sx={STYLES.technicalSkill}>
-                <Typography sx={STYLES.technicalSkillPosition}>{technicalSkill.positionNameKey}</Typography>
+                <Typography sx={STYLES.technicalSkillPosition}>
+                  {t(technicalSkill.positionNameKey)}
+                </Typography>
                 <Typography sx={STYLES.technicalSkillValue}>{technicalSkill.skills.join(', ')}</Typography>
               </Box>
             )}

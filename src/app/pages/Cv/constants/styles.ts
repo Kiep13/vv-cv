@@ -160,7 +160,7 @@ export const STYLES = {
   technicalSkill: {
     display: 'flex',
     flexDirection: 'row',
-    alignItems: 'flex-start',
+    alignItems: 'center',
     justifyContent: 'center',
     gap: '15px',
 

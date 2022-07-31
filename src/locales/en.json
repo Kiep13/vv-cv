@@ -6,6 +6,12 @@
     "experience": "Experience",
     "contactMe": "Contact me"
   },
+  "technicalSkillPositions": {
+    "osPlatforms": "OS Platforms:",
+    "apiTools": "API Tools:",
+    "projectManagementTools": "Project Management Tools:",
+    "virtualizationTools": "Virtualization Tools:"
+  },
   "experience": {
     "psu": {
       "title": "PSU",

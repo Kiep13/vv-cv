@@ -6,6 +6,12 @@
     "experience": "Опыт",
     "contactMe": "Контакты"
   },
+  "technicalSkillPositions": {
+    "osPlatforms": "Платформы:",
+    "apiTools": "API инструменты:",
+    "projectManagementTools": "Средства менеджмента:",
+    "virtualizationTools": "Средства виртуализации:"
+  },
   "experience": {
     "psu": {
       "title": "ПГУ",
