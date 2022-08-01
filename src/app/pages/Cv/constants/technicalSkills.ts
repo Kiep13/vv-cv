@@ -14,6 +14,10 @@ export const TECHNICAL_SKILLS: ITechnicalSkill[] = [
     skills: ['Jira', 'GitHub']
   },
   {
+    positionNameKey: 'technicalSkillPositions.buildTools',
+    skills: ['CMake']
+  },
+  {
     positionNameKey: 'technicalSkillPositions.virtualizationTools',
     skills: ['Virtual Box']
   }

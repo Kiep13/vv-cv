@@ -10,6 +10,7 @@
     "osPlatforms": "Платформы:",
     "apiTools": "API инструменты:",
     "projectManagementTools": "Средства менеджмента:",
+    "buildTools": "Средства сборки:",
     "virtualizationTools": "Средства виртуализации:"
   },
   "experience": {
