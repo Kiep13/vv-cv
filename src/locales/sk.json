@@ -1,0 +1,29 @@
+{
+  "greeting": "Ahoj!\nSom Valera",
+  "aboutDescription": "Ak niečo neviem - dajte mi čas.\n Zvládnem to.",
+  "sectionTitles": {
+    "skills": "Zručnosti",
+    "experience": "Skúsenosť",
+    "contactMe": "Kontaktujte ma"
+  },
+  "technicalSkillPositions": {
+    "osPlatforms": "Platformy OS:",
+    "apiTools": "Nástroje API:",
+    "projectManagementTools": "Nástroje na riadenie projektov:",
+    "virtualizationTools": "Virtualizačné nástroje:"
+  },
+  "experience": {
+    "psu": {
+      "title": "PSU",
+      "titleTooltip": "Polotská štátna univerzita",
+      "description": "Získanie bakalárskeho titulu v odbore vývoj softvéru"
+    },
+    "iTechArt": {
+      "title": "iTechArt",
+      "description": "Pracujte ako vývojár C++"
+    }
+  },
+  "shared": {
+    "present": "Prítomný"
+  }
+}

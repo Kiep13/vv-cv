@@ -3,6 +3,7 @@ import { initReactI18next } from 'react-i18next';
 
 import translationRU from './locales/ru.json';
 import translationEN from './locales/en.json';
+import translationSK from './locales/sk.json';
 
 const resources = {
   ru: {
@@ -10,6 +11,9 @@ const resources = {
   },
   en: {
     translation: translationEN
+  },
+  sk: {
+    translation: translationSK
   }
 }
 

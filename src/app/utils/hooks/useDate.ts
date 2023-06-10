@@ -8,6 +8,10 @@ moment.locale('ru', {
   monthsShort : 'Январь_Февраль_Март_Апрель_Май_Июнь_Июль_Август_Сентябрь_Октябрь_Ноябрь_Декабрь'.split('_'),
 });
 
+moment.locale('sk', {
+  monthsShort : 'Január_Február_Marec_Apríl_Máj_Jún_Júl_August_September_Október_November_December'.split('_'),
+});
+
 export const useDate = () => {
   const {i18n} = useTranslation();
 

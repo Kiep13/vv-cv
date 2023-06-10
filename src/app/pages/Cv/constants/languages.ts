@@ -10,5 +10,10 @@ export const LANGUAGES: ILanguage[] = [
     title: 'Русский',
     code: 'ru',
     countryCode: 'ru'
+  },
+  {
+    title: 'Slovenská',
+    code: 'sk',
+    countryCode: 'sk'
   }
 ]
